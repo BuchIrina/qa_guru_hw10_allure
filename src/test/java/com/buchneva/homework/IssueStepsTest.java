@@ -26,7 +26,7 @@ public class IssueStepsTest {
     public void issueExistsInRepositoryLambdaTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        step("Open github.com", () -> {
+        step("Open mind page", () -> {
             open("https://github.com/");
         });
         step("Search repository " + REPOSITORY, () -> {
